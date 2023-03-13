@@ -2,53 +2,53 @@
     "uid": "801387817",
     "input": "",
     "Character": {
-        "Name": "神里綾華",
-        "Const": 5,
+        "Name": "ディオナ",
+        "Const": 4,
         "Level": 90,
         "Love": 10,
         "Status": {
-            "HP": 20875,
-            "攻撃力": 2073,
-            "防御力": 887,
-            "元素熟知": 103,
-            "会心率": 43.2,
-            "会心ダメージ": 206.6,
-            "元素チャージ効率": 161.6
+            "HP": 23558,
+            "攻撃力": 515,
+            "防御力": 925,
+            "元素熟知": 112,
+            "会心率": 5.0,
+            "会心ダメージ": 63.2,
+            "元素チャージ効率": 181.8
         },
         "Talent": {
-            "通常": 8,
-            "スキル": 1,
-            "爆発": 9
+            "通常": 1,
+            "スキル": 11,
+            "爆発": 10
         },
         "Base": {
-            "HP": 12858,
-            "攻撃力": 950,
-            "防御力": 784
+            "HP": 9570,
+            "攻撃力": 256,
+            "防御力": 601
         }
     },
     "Weapon": {
-        "name": "天空の刃",
-        "Level": 90,
-        "totu": 1,
-        "rarelity": 5,
-        "BaseATK": 608,
+        "name": "祭礼の弓",
+        "Level": 1,
+        "totu": 2,
+        "rarelity": 4,
+        "BaseATK": 44,
         "Sub": {
             "name": "元素チャージ効率",
-            "value": 55.1
+            "value": 6.7
         }
     },
     "Score": {
         "State": "攻撃%",
-        "flower": 33.4,
-        "wing": 45.9,
-        "clock": 28.0,
-        "cup": 40.8,
-        "crown": 7.8,
-        "total": 155.9
+        "flower": 8.7,
+        "wing": 12.2,
+        "clock": 0.0,
+        "cup": 0.0,
+        "crown": 13.2,
+        "total": 34.1
     },
     "Artifacts": {
         "flower": {
-            "type": "氷風を彷徨う勇士",
+            "type": "愛される少女",
             "Level": 20,
             "rarelity": 5,
             "main": {
@@ -57,128 +57,128 @@
             },
             "sub": [
                 {
-                    "option": "元素熟知",
-                    "value": 40
+                    "option": "防御力",
+                    "value": 21
                 },
                 {
-                    "option": "攻撃力",
-                    "value": 37
+                    "option": "防御パーセンテージ",
+                    "value": 21.1
                 },
                 {
-                    "option": "会心ダメージ",
-                    "value": 20.2
+                    "option": "HPパーセンテージ",
+                    "value": 11.1
                 },
                 {
-                    "option": "会心率",
-                    "value": 6.6
+                    "option": "攻撃パーセンテージ",
+                    "value": 8.7
                 }
             ]
         },
         "wing": {
-            "type": "氷風を彷徨う勇士",
-            "Level": 20,
+            "type": "愛される少女",
+            "Level": 12,
             "rarelity": 5,
             "main": {
                 "option": "攻撃力",
-                "value": 311
+                "value": 205
             },
             "sub": [
                 {
+                    "option": "元素熟知",
+                    "value": 37
+                },
+                {
+                    "option": "HPパーセンテージ",
+                    "value": 5.3
+                },
+                {
+                    "option": "元素チャージ効率",
+                    "value": 5.2
+                },
+                {
                     "option": "攻撃パーセンテージ",
-                    "value": 11.7
-                },
-                {
-                    "option": "防御パーセンテージ",
-                    "value": 5.8
-                },
-                {
-                    "option": "会心ダメージ",
-                    "value": 21.0
-                },
-                {
-                    "option": "会心率",
-                    "value": 6.6
+                    "value": 12.2
                 }
             ]
         },
         "clock": {
-            "type": "氷風を彷徨う勇士",
+            "type": "翠緑の影",
             "Level": 20,
             "rarelity": 5,
             "main": {
-                "option": "攻撃パーセンテージ",
-                "value": 46.6
+                "option": "元素チャージ効率",
+                "value": 51.8
             },
             "sub": [
                 {
-                    "option": "会心率",
-                    "value": 6.6
-                },
-                {
-                    "option": "会心ダメージ",
-                    "value": 14.8
-                },
-                {
-                    "option": "攻撃力",
-                    "value": 33
+                    "option": "防御力",
+                    "value": 58
                 },
                 {
                     "option": "HP",
                     "value": 538
+                },
+                {
+                    "option": "防御パーセンテージ",
+                    "value": 12.4
+                },
+                {
+                    "option": "HPパーセンテージ",
+                    "value": 9.3
                 }
             ]
         },
         "cup": {
-            "type": "氷風を彷徨う勇士",
+            "type": "愛される少女",
             "Level": 20,
             "rarelity": 5,
             "main": {
-                "option": "氷元素ダメージ",
+                "option": "HPパーセンテージ",
                 "value": 46.6
             },
             "sub": [
                 {
-                    "option": "元素チャージ効率",
-                    "value": 6.5
-                },
-                {
                     "option": "元素熟知",
-                    "value": 23
+                    "value": 75
                 },
                 {
-                    "option": "攻撃パーセンテージ",
-                    "value": 19.8
+                    "option": "防御力",
+                    "value": 44
                 },
                 {
-                    "option": "会心率",
-                    "value": 10.5
+                    "option": "HP",
+                    "value": 269
+                },
+                {
+                    "option": "元素チャージ効率",
+                    "value": 5.2
                 }
             ]
         },
         "crown": {
-            "type": "氷風を彷徨う勇士",
+            "type": "愛される少女",
             "Level": 20,
             "rarelity": 5,
             "main": {
-                "option": "会心ダメージ",
-                "value": 62.2
+                "option": "与える治療効果",
+                "value": 35.9
             },
             "sub": [
                 {
-                    "option": "元素熟知",
-                    "value": 40
-                },
-                {
-                    "option": "会心率",
-                    "value": 3.9
-                },
-                {
                     "option": "HPパーセンテージ",
-                    "value": 21.0
+                    "value": 9.9
                 },
                 {
-                    "option": "防御パーセンテージ",
-                    "value": 7.3
+                    "option": "HP",
+                    "value": 538
+                },
+                {
+                    "option": "会心ダメージ",
+                    "value": 13.2
+                },
+                {
+                    "option": "元素チャージ効率",
+                    "value": 13.0
                 }
             ]
         }

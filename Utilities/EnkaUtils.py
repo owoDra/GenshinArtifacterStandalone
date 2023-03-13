@@ -1,8 +1,6 @@
 from enkanetwork import EnkaNetworkAPI
 import asyncio
 
-Client = EnkaNetworkAPI(lang="jp")
-
 # ==============================================
 # UId から UserData を取得する
 #
@@ -13,6 +11,7 @@ def FetchUserData(Uid):
     return asyncio.run(__Async_GetPlayerInfo(Uid))
 
 async def __Async_GetPlayerInfo(Uid):
+    Client = EnkaNetworkAPI(lang="jp")
     async with Client:
         try:
             Data = await Client.fetch_user_by_uid(Uid)
