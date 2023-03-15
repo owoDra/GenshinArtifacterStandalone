@@ -29,11 +29,14 @@ def CalculateScore(Artifact, Eval: str):
     elif Eval == "HP%":
         EvalOpt = ["HP"]
     elif Eval == "熟知":
-        EvalOpt = ["熟知", "攻撃力"]
+        EvalOpt = ["元素熟知", "攻撃力"]
         
     for Substate in Artifact.detail.substats:
         if Substate.name in EvalOpt:
-            if Substate.type == DigitType.PERCENT or Substate.name == "熟知":
+            if Substate.name == "元素熟知":
+                TotalSocre = TotalSocre + Substate.value * 0.25
+            
+            elif Substate.type == DigitType.PERCENT:
                 TotalSocre = TotalSocre + Substate.value
             
         elif Substate.name == "会心率":
@@ -43,7 +46,34 @@ def CalculateScore(Artifact, Eval: str):
                 TotalSocre = TotalSocre + Substate.value
                 
     return round(TotalSocre, 1)
-        
+     
+
+def SelectElementBuffName(Character: CharacterInfo):
+    ElementTypes: dict = {
+        "Ice": "氷元素ダメージ",
+        "Water": "水元素ダメージ",
+        "Wind": "風元素ダメージ",
+        "Fire": "炎元素ダメージ",
+        "Rock": "岩元素ダメージ",
+        "Electric": "雷元素ダメージ",
+        "Grass": "草元素ダメージ"
+    }
+    
+    return ElementTypes[Character.element]
+
+def SelectElementBuffValue(Character: CharacterInfo):
+    ElementTypes: dict = {
+        "Ice": round(Character.stats.FIGHT_PROP_MAX_ICE_ENERGY.value, 1),
+        "Water": round(Character.stats.FIGHT_PROP_MAX_WATER_ENERGY.value, 1),
+        "Wind": round(Character.stats.FIGHT_PROP_MAX_WIND_ENERGY.value, 1),
+        "Fire": round(Character.stats.FIGHT_PROP_MAX_FIRE_ENERGY.value, 1),
+        "Rock": round(Character.stats.FIGHT_PROP_MAX_ROCK_ENERGY.value, 1),
+        "Electric": round(Character.stats.FIGHT_PROP_MAX_ELEC_ENERGY.value, 1),
+        "Grass": round(Character.stats.FIGHT_PROP_MAX_GRASS_ENERGY.value, 1)
+    }
+    
+    return ElementTypes[Character.element]
+   
 
 def EvaluateAndExpotData(Uid: int, Character: CharacterInfo, Eval: str):
     ArtifactTypes: dict = {
@@ -59,7 +89,8 @@ def EvaluateAndExpotData(Uid: int, Character: CharacterInfo, Eval: str):
         "Wind": "風",
         "Fire": "炎",
         "Rock": "岩",
-        "Electric": "雷"
+        "Electric": "雷",
+        "Grass": "草"
     }
     
     Item_Uid = {"uid": Uid}
@@ -67,7 +98,7 @@ def EvaluateAndExpotData(Uid: int, Character: CharacterInfo, Eval: str):
     Item_Character = {
         "Character": {
             "Name": Character.name,
-            "Const": Character.rarity,
+            "Const": Character.constellations_unlocked,
             "Level": Character.level,
             "Love": Character.friendship_level,
             "Status": {
@@ -78,6 +109,7 @@ def EvaluateAndExpotData(Uid: int, Character: CharacterInfo, Eval: str):
                 "会心率": round(Character.stats.FIGHT_PROP_CRITICAL.value * 100, 1),
                 "会心ダメージ": round(Character.stats.FIGHT_PROP_CRITICAL_HURT.value * 100, 1),
                 "元素チャージ効率": round(Character.stats.FIGHT_PROP_CHARGE_EFFICIENCY.value * 100, 1),
+                SelectElementBuffName(Character): SelectElementBuffValue(Character)
             },
             "Talent": {
                 "通常": Character.skills[0].level,

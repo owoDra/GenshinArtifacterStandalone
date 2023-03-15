@@ -1,12 +1,11 @@
 from Utilities import EnkaUtils
 from UserInterface.UI_Base import BaseUI
-from UserInterface.UI_Generator import UI_Generator
 
 import PySimpleGUI as PSG
 
 class UI_SetUID(BaseUI):
-    def __init__(self):
-        super().__init__()
+    def __init__(self, Func):
+        super().__init__(Func)
     
     def Construct(self):
         Layout = [  [PSG.Text('読み込むユーザーのUIDを入力してください。')],
@@ -27,5 +26,4 @@ class UI_SetUID(BaseUI):
         if Data == None:
             PSG.popup_error('読み込み失敗: UIDが間違っている可能性があります')
         else:
-            self.Close()
-            UI_Generator(Data)
+            self.Close(SendHandler = True, Arg = Data)

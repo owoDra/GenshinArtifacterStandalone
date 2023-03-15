@@ -2,53 +2,54 @@
     "uid": "801387817",
     "input": "",
     "Character": {
-        "Name": "ディオナ",
-        "Const": 4,
+        "Name": "ナヒーダ",
+        "Const": 0,
         "Level": 90,
         "Love": 10,
         "Status": {
-            "HP": 23558,
-            "攻撃力": 515,
-            "防御力": 925,
-            "元素熟知": 112,
-            "会心率": 5.0,
-            "会心ダメージ": 63.2,
-            "元素チャージ効率": 181.8
+            "HP": 15140,
+            "攻撃力": 1293,
+            "防御力": 727,
+            "元素熟知": 841,
+            "会心率": 47.0,
+            "会心ダメージ": 112.2,
+            "元素チャージ効率": 122.7,
+            "草元素ダメージ": 50
         },
         "Talent": {
             "通常": 1,
-            "スキル": 11,
+            "スキル": 10,
             "爆発": 10
         },
         "Base": {
-            "HP": 9570,
-            "攻撃力": 256,
-            "防御力": 601
+            "HP": 10360,
+            "攻撃力": 653,
+            "防御力": 630
         }
     },
     "Weapon": {
-        "name": "祭礼の弓",
-        "Level": 1,
-        "totu": 2,
-        "rarelity": 4,
-        "BaseATK": 44,
+        "name": "魔導緒論",
+        "Level": 90,
+        "totu": 5,
+        "rarelity": 3,
+        "BaseATK": 354,
         "Sub": {
-            "name": "元素チャージ効率",
-            "value": 6.7
+            "name": "元素熟知",
+            "value": 187
         }
     },
     "Score": {
-        "State": "攻撃%",
-        "flower": 8.7,
-        "wing": 12.2,
-        "clock": 0.0,
-        "cup": 0.0,
-        "crown": 13.2,
-        "total": 34.1
+        "State": "熟知",
+        "flower": 42.4,
+        "wing": 39.8,
+        "clock": 29.5,
+        "cup": 7.8,
+        "crown": 38.1,
+        "total": 157.6
     },
     "Artifacts": {
         "flower": {
-            "type": "愛される少女",
+            "type": "深林の記憶",
             "Level": 20,
             "rarelity": 5,
             "main": {
@@ -57,120 +58,62 @@
             },
             "sub": [
                 {
-                    "option": "防御力",
+                    "option": "元素熟知",
                     "value": 21
                 },
                 {
-                    "option": "防御パーセンテージ",
-                    "value": 21.1
-                },
-                {
-                    "option": "HPパーセンテージ",
-                    "value": 11.1
-                },
-                {
                     "option": "攻撃パーセンテージ",
-                    "value": 8.7
+                    "value": 9.9
+                },
+                {
+                    "option": "会心ダメージ",
+                    "value": 27.2
+                },
+                {
+                    "option": "攻撃力",
+                    "value": 39
                 }
             ]
         },
         "wing": {
-            "type": "愛される少女",
-            "Level": 12,
+            "type": "深林の記憶",
+            "Level": 20,
             "rarelity": 5,
             "main": {
                 "option": "攻撃力",
-                "value": 205
+                "value": 311
             },
             "sub": [
                 {
+                    "option": "会心ダメージ",
+                    "value": 14.0
+                },
+                {
+                    "option": "会心率",
+                    "value": 7.0
+                },
+                {
                     "option": "元素熟知",
+                    "value": 47
+                },
+                {
+                    "option": "防御力",
                     "value": 37
-                },
-                {
-                    "option": "HPパーセンテージ",
-                    "value": 5.3
-                },
-                {
-                    "option": "元素チャージ効率",
-                    "value": 5.2
-                },
-                {
-                    "option": "攻撃パーセンテージ",
-                    "value": 12.2
                 }
             ]
         },
         "clock": {
-            "type": "翠緑の影",
+            "type": "大地を流浪する楽団",
             "Level": 20,
             "rarelity": 5,
             "main": {
-                "option": "元素チャージ効率",
-                "value": 51.8
+                "option": "元素熟知",
+                "value": 187
             },
             "sub": [
                 {
-                    "option": "防御力",
-                    "value": 58
-                },
-                {
-                    "option": "HP",
-                    "value": 538
-                },
-                {
-                    "option": "防御パーセンテージ",
-                    "value": 12.4
-                },
-                {
-                    "option": "HPパーセンテージ",
-                    "value": 9.3
-                }
-            ]
-        },
-        "cup": {
-            "type": "愛される少女",
-            "Level": 20,
-            "rarelity": 5,
-            "main": {
-                "option": "HPパーセンテージ",
-                "value": 46.6
-            },
-            "sub": [
-                {
-                    "option": "元素熟知",
-                    "value": 75
-                },
-                {
-                    "option": "防御力",
-                    "value": 44
-                },
-                {
-                    "option": "HP",
-                    "value": 269
-                },
-                {
-                    "option": "元素チャージ効率",
-                    "value": 5.2
-                }
-            ]
-        },
-        "crown": {
-            "type": "愛される少女",
-            "Level": 20,
-            "rarelity": 5,
-            "main": {
-                "option": "与える治療効果",
-                "value": 35.9
-            },
-            "sub": [
-                {
-                    "option": "HPパーセンテージ",
-                    "value": 9.9
-                },
-                {
-                    "option": "HP",
-                    "value": 538
+                    "option": "攻撃力",
+                    "value": 31
                 },
                 {
                     "option": "会心ダメージ",
@@ -178,10 +121,68 @@
                 },
                 {
                     "option": "元素チャージ効率",
-                    "value": 13.0
+                    "value": 11.0
+                },
+                {
+                    "option": "攻撃パーセンテージ",
+                    "value": 16.3
+                }
+            ]
+        },
+        "cup": {
+            "type": "深林の記憶",
+            "Level": 20,
+            "rarelity": 5,
+            "main": {
+                "option": "元素熟知",
+                "value": 187
+            },
+            "sub": [
+                {
+                    "option": "攻撃力",
+                    "value": 33
+                },
+                {
+                    "option": "元素チャージ効率",
+                    "value": 11.7
+                },
+                {
+                    "option": "防御力",
+                    "value": 60
+                },
+                {
+                    "option": "会心率",
+                    "value": 3.9
+                }
+            ]
+        },
+        "crown": {
+            "type": "深林の記憶",
+            "Level": 20,
+            "rarelity": 5,
+            "main": {
+                "option": "会心率",
+                "value": 31.1
+            },
+            "sub": [
+                {
+                    "option": "会心ダメージ",
+                    "value": 7.8
+                },
+                {
+                    "option": "攻撃力",
+                    "value": 16
+                },
+                {
+                    "option": "攻撃パーセンテージ",
+                    "value": 5.8
+                },
+                {
+                    "option": "元素熟知",
+                    "value": 98
                 }
             ]
         }
     },
-    "元素": "氷"
+    "元素": "草"
 }

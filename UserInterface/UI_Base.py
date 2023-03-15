@@ -1,6 +1,7 @@
 class BaseUI:
-    def __init__(self):
-        self.PendingDestroy = False;
+    def __init__(self, Func):
+        self.HandleCloseFunc = Func
+        self.PendingDestroy = False
         self.Window = self.Construct()
         
         while not self.PendingDestroy:
@@ -13,7 +14,9 @@ class BaseUI:
     def Update(self, Event, Values):
         pass
         
-    def Close(self):
+    def Close(self, SendHandler = False, Arg = None):
         self.PendingDestroy = True
         self.Window.close()
+        if SendHandler:
+            self.HandleCloseFunc(Arg)
         
